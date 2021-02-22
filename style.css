@@ -1,50 +1,80 @@
 body {
-    font-family: "Lato", sans-serif;
-  }
+  font-family: "Lato", sans-serif;
+}
   
-  .sidenav {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(241, 238, 238);
-    overflow-x: hidden;
-    padding-top: 10px;
-  }
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(241, 238, 238);
+  overflow-x: hidden;
+  padding-top: 10px;
+}
   
-  .sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-  }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  .main {
-    margin-left: 200px; /* Same as the width of the sidenav */
-    font-size: 20px; /* Increased text to enable scrolling */
-    padding: 0px 10px;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+.sidenav a {
+  padding-top: 10px;
+  padding-left: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
 
-.header {
-    padding: 2px;
-    /* height: 50px; */
-    /* width: 178px; */
-    width: 200px;
-    border-radius: 2px;
-    text-align: left;
-    background: #3fa012;
-    color: white;
-    font-size: 2px;
+.sidenav h3 {
+  padding: 0px 0px 0px 20px;
+  font-weight: lighter;
+  /* text-decoration: solid; */
+  font-size: 26px;
+  color: #030000;
+  /* display: block; */
+ }
+  
+.sidenav a:hover {
+  color: #1a0606;
+}
+  
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+  
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.headerleft {
+  /* width: 50%; */
+  /* float: left; */
+  padding: 10px;
+
+  /* border: 2px solid red; */
+  
+  width: 400px;
+  float: left;
+  border-radius: 20px;
+  text-align: left;
+  background: #3fa012;
+  color: white;
+  font-size: 2px;
+}
+
+.headerright{
+  padding:10px;
+  
+  /* border-radius: 20px; */
+  /* text-align: left; */
+  /* background: #3fa012; */
+  /* color: white; */
+  /* font-size: 2px; */
+}
+
+.search{
+  border-radius: 15px;
+  height: 26px;
+  width: 200px;
 }
