@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Task1</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="main.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
+  <head>
+    <title>Task1</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="main.js"></script> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
 
-<div class="sidenav">
-  <h3>Mould</h3>
-  <!-- <a href="#Mould"></a> -->
-  <a href="#Dashboard">Dashboard</a>
-  <a href="#Calender">Calender</a>
-  <a href="#Patient Board">Patient Board</a>
-  <a href="#Procedure">Procedure</a>
-  <a href="#Report">Report</a>
-  <a href="#Revenue">Revenue</a>
-  <a href="#Insurance">Insurance</a>
-</div>
+    <div class="sidenav">
+      <h3>Mould</h3>
+      <!-- <a href="#Mould"></a> -->
+      <a href="#Dashboard">Dashboard</a>
+      <a href="#Calender">Calender</a>
+      <a href="#Patient Board">Patient Board</a>
+      <a href="#Procedure">Procedure</a>
+      <a href="#Report">Report</a>
+      <a href="#Revenue">Revenue</a>
+      <a href="#Insurance">Insurance</a>
+    </div>
 
-<div class="main">
-    <div class="headerleft">
-      <input type="text" placeholder="Search.." class="search">
-      <!-- <p>Date/Time: <span id="datetime"></span></p> -->
+    <div class="main">
+      <div class="flex-container">
+        <div class="flex-child magenta">
+          <input type="text" placeholder="Search.." class="search">
+        </div>
+        <div class="flex-child green">
+          <p class="datetime"><span id="datetime"></span></p>
+            <script>
+              var dt = new Date();
+              var hours = dt.getHours();
+              var minutes = dt.getMinutes();
+              hours = hours % 12;
+              hours = hours ? hours : 12; 
+              minutes = minutes < 10 ? '0'+minutes : minutes;
+              var strTime = hours + ':' + minutes;
+              document.getElementById("datetime").innerHTML =strTime +"  |  "+(("0"+dt.getDate()).slice(-2)) +"-"+ (("0"+(dt.getMonth()+1)).slice(-2)) +"-"+ (dt.getFullYear()) ;
+            </script>
+        </div>
+      </div>
+      <h3>hi</h3>
+      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo.</p>
     </div>
-    <div class="headerright">
-      <input type="text" placeholder="Search.." class="search">
-      <!-- <p>Date/Time: <span id="datetime"></span></p> -->
-    </div>
-    
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo.</p>
-</div>
-   
-</body>
+
+  </body>
 </html> 
